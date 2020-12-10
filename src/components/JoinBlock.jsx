@@ -20,14 +20,15 @@ function JoinBlock({ onLogin }) {
   };
 
   return (
+    
     <div className="join-block">
-      <input
+      <input className="join-block-input"
         type="text"
         placeholder="Room ID"
         value={roomId}
         onChange={(e) => setRoomId(e.target.value)}
       />
-      <input
+      <input className="join-block-input"
         type="text"
         placeholder="Ваше имя"
         value={userName}
@@ -37,6 +38,7 @@ function JoinBlock({ onLogin }) {
         {isLoading ? 'ВХОД...' : 'ВОЙТИ'}
       </button>
     </div>
+   
   );
 }
 
